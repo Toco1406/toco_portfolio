@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de développeur — projets, compétences et contact.">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav">
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-label">Développeur web</p>
+      <h1>Bonjour, je suis <span class="accent">Emilie TAO</span></h1>
+      <p class="hero-text">
+        Je conçois des interfaces simples, élégantes et performantes.
+        Passionné par le code propre et l'expérience utilisateur.
+      </p>
+      <div class="hero-actions">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+      </div>
+    </section>
+
+    <section id="apropos" class="section">
+      <h2>À propos</h2>
+      <div class="about-grid">
+        <p>
+          Étudiant en développement web, je crée des sites et applications
+          modernes avec une attention particulière portée à la simplicité
+          et à l'accessibilité.
+        </p>
+        <ul class="skills">
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projets" class="section">
+      <h2>Projets</h2>
+      <div class="projects">
+        <article class="project-card">
+          <span class="project-tag">Web</span>
+          <h3>Application météo</h3>
+          <p>Interface minimaliste affichant la météo en temps réel via une API REST.</p>
+          <a href="#" class="project-link">Voir le projet →</a>
+        </article>
+        <article class="project-card">
+          <span class="project-tag">Full-stack</span>
+          <h3>Gestionnaire de tâches</h3>
+          <p>Application CRUD avec authentification et base de données.</p>
+          <a href="#" class="project-link">Voir le projet →</a>
+        </article>
+        <article class="project-card">
+          <span class="project-tag">Design</span>
+          <h3>Landing page</h3>
+          <p>Page d'accueil responsive pour une marque fictive, design épuré.</p>
+          <a href="#" class="project-link">Voir le projet →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="contact-text">
+        Un projet en tête ? N'hésitez pas à me contacter.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:votre@email.com">tao.emilie15@gmail.com</a>
+        <a href="https://github.com/Toco1406" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/emilie-tao-144432256/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Votre Nom. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
