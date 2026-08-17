@@ -117,7 +117,7 @@
 
           J’ai développé et personnalisé différentes interfaces avec WordPress et Elementor, tout en configurant plusieurs plugins pour répondre aux besoins du site. J’ai également réalisé des composants personnalisés en HTML, notamment des carrousels, et intégré une carte interactive afin d’enrichir l’expérience utilisateur. Une attention particulière a été portée à l’adaptation des pages aux différents formats d’écran et à la cohérence de l’ensemble du site."
           data-link="https://asso-afcb.fr/">
-          <img src="images/projet1.png" alt="Application météo" class="project-image">
+          <img src="images/projet1.png" alt="Projet 1" class="project-image">
           <span class="project-tag">Front-end</span>
           <h3>Développement & Intégration sur WordPress - AFCB</h3>
           <p>Dans le cadre de la refonte du site de l’AFCB, j’ai assuré l’intégration et le développement front-end sous WordPress, en donnant vie aux interfaces conçues en amont.
@@ -125,12 +125,12 @@
           <a href="#" class="project-link">Voir le projet →</a>
         </article>
     
-        <article class="project-card" data-title="Gestionnaire de tâches"
+        <article class="project-card" data-title="Conception UX/UI - Figma"
           data-images="images/projet2.png"
           data-description="J’ai réalisé les différentes maquettes des pages du site sur Figma, en définissant la structure des contenus, la hiérarchie visuelle et les principaux éléments d’interface. J’ai également travaillé sur la cohérence graphique de l’ensemble du site ainsi que sur l’adaptation des interfaces aux différents formats d’écran. Ces maquettes ont ensuite servi de base pour l’intégration et le développement du site sous WordPress.
           "
           data-link="https://www.figma.com/design/76ilIHiRsppTbVu57jM8ZJ/afcb-maquette-v2?node-id=2004-595&t=SB0qxBS6XusASFvj-1">
-          <img src="images/projet2.png" alt="Gestionnaire de tâches" class="project-image">
+          <img src="images/projet2.png" alt="Projet 2" class="project-image">
           <span class="project-tag">Design</span>
           <h3>Conception UX/UI Figma - AFCB</h3>
           <p>j’ai conçu les interfaces du site de l’AFCB sur Figma, en travaillant sur leur structure, leur ergonomie et leur identité visuelle.</p>
@@ -138,11 +138,11 @@
         </article>
     
         <article class="project-card" data-title="Landing page"
-          data-images="images/landing-1.jpg,images/landing-2.jpg,images/landing-3.jpg"
+          data-images="images/projet3.png"
           data-description="Page d'accueil responsive pour une marque fictive, design épuré."
-          data-link="https://github.com/Toco1406/landing-page">
-          <img src="images/landing-1.jpg" alt="Landing page" class="project-image">
-          <span class="project-tag">Design</span>
+          data-link="https://sae-401-gamma.vercel.app/">
+          <img src="images/projet3.png" alt="Landing page" class="project-image">
+          <span class="project-tag">Front-end</span>
           <h3>Landing page</h3>
           <p>Page d'accueil responsive pour une marque fictive, design épuré.</p>
           <a href="#" class="project-link">Voir le projet →</a>
@@ -173,6 +173,29 @@
 
     <section id="contact" class="section">
       <h2>Contact</h2>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="objet">Objet</label>
+          <input type="text" id="objet" name="objet" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit-btn">Envoyer</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+
+      <!-- 
       <p class="contact-text">
         Un projet en tête ? N'hésitez pas à me contacter.
       </p>
@@ -181,13 +204,20 @@
         <a href="https://github.com/Toco1406" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/emilie-tao-144432256/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
+      -->
+
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Votre Nom. Tous droits réservés.</p>
+    <p>© 2026 Emilie Tao. Tous droits réservés.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Scripts en tout dernier -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/contact-form.js"></script>
+  
 </body>
 </html>

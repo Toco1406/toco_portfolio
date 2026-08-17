@@ -1,6 +1,3 @@
-const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.nav');
-const navLinks = document.querySelectorAll('.nav a');
 const modal = document.getElementById('projectModal');
 const modalImage = document.getElementById('modalImage');
 const modalTitle = document.getElementById('modalTitle');
@@ -10,20 +7,6 @@ const carouselDots = document.getElementById('carouselDots');
 const carouselPrev = document.getElementById('carouselPrev');
 const carouselNext = document.getElementById('carouselNext');
 const modalClose = document.getElementById('modalClose');
-
-menuBtn.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  menuBtn.classList.toggle('active', isOpen);
-  menuBtn.setAttribute('aria-expanded', isOpen);
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuBtn.classList.remove('active');
-    menuBtn.setAttribute('aria-expanded', 'false');
-  });
-});
 
 let currentImages = [];
 let currentIndex = 0;

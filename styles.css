@@ -12,7 +12,7 @@
   --bg: #fafafa;
   --text: #1a1a1a;
   --text-muted: #6b6b6b;
-  --accent: #2563eb;
+  --accent: #183f93;
   --border: #e5e5e5;
   --card: #ffffff;
   --max-width: 1024px;
@@ -203,7 +203,7 @@ main {
 }
 
 .social-links a {
-  color: #2563eb; 
+  color: #183f93; 
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
@@ -228,7 +228,7 @@ main {
   color: var(--text-muted);
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #2563eb;
+  color: #183F93;
 }
 
 /* About */
@@ -242,7 +242,7 @@ main {
 }
 
 .about-intro {
-  grid-column: 1 / -1; /* le paragraphe prend toute la largeur en haut */
+  grid-column: 1 / -1; 
   text-align: center;
   max-width: 700px;
   margin: 0 auto 1rem;
@@ -475,6 +475,56 @@ main {
 
 /* Contact */
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.65rem 0.85rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--text);
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-status {
+  font-size: 0.875rem;
+  min-height: 1.2em;
+}
+
+.form-status.success { color: #1a7a3c; }
+.form-status.error { color: #c0392b; }
+
+#submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .contact-text {
   color: var(--text-muted);
   font-size: 1.05rem;
@@ -524,6 +574,10 @@ main {
 
 @media (max-width: 600px) {
   .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
     grid-template-columns: 1fr;
   }
 
